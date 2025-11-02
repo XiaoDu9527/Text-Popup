@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>❤小小弹窗❤ - Yuhiro's Blog</title>
+    <link rel="stylesheet" type="text/css" href="./tc.css">
+</head>
+<body>
+    <video autoplay loop muted playsinline webkit-playsinline preload="auto">
+        <source src="https://yuhiro.cn/video1/EP03.mp4" type="video/mp4">
+    </video>
+    <div class="settings-icon"></div>
+    <div class="settings-popup">
+        <input type="text" id="message-input" placeholder="请输入您的消息... (支持Emoji)" value="">
+        <button onclick="addMessage()">添加消息</button>
+        <ul class="message-list" id="message-list">
+        </ul>
+        <div class="button-group">
+            <button id="pause-resume-button" onclick="togglePauseResume()">暂停</button>
+            <button onclick="clearScreen()">清空屏幕</button>
+            <button onclick="saveMessages()">保存</button>
+        </div>
+    </div>
+<script type="text/javascript" src="./tc.js"></script>
+</body>
+</html>
